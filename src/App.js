@@ -20,7 +20,7 @@ const App = () => {
   const edit = (u) => {
     let inp = prompt('enter new task');
     
-    // setTodos(todos.map((item) =>  {return state.name[u] = inp}));
+    setTodos(todos.map((item,i) =>{ if(i == u-1)item.name=inp; return item}));
   };
   return (
     <>
